@@ -7,11 +7,11 @@ const subtract = function (a, b) {
 };
 
 const sum = function (array) {
-  return array.reduce((total, current) => total + current, 0);
+  return array.reduce((total, current) => total + current, 0); // Initializes total to 0, then adds each current value to total.
 };
 
 const multiply = function (array) {
-  return array.reduce((product, current) => product * current)
+  return array.reduce((product, current) => product * current) // Initializes product to the first element of the array, then multiplies each current value with product.
 };
 
 const power = function (a, b) {
@@ -29,7 +29,7 @@ const factorial = function (n) {
 
 // This is another implementation of Factorial that uses recursion
 // THANKS to @ThirtyThreeB!
-const recursiveFactorial = function (n) {
+const recursiveFactorial = function (n) { //5 => 5*(4*3*2*1)
   if (n === 0) {
     return 1;
   }
